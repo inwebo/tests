@@ -4,6 +4,11 @@
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
+## Dependencies
+
+- [Install Symfony CLI](https://symfony.com/download#step-1-install-symfony-cli)
+- [PHPSpreadSheet](https://github.com/PHPOffice/PhpSpreadsheet)
+
 ## Installation
 
 ```bash
@@ -29,7 +34,6 @@ bin/console doctrine:schema:update --force
 ## Start
 
 ```bash
-# Avec le binaire Symfony 
 symfony server:start
 
 # bin/console server:start
