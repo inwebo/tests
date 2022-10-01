@@ -29,7 +29,10 @@ bin/console doctrine:schema:update --force
 ## Start
 
 ```bash
-bin/console server:start
+# Avec le binaire Symfony 
+symfony server:start
+
+# bin/console server:start
 ```
 
 ## Linter
