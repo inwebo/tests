@@ -36,9 +36,9 @@ class IndexController extends AbstractController
         }
 
         return $this->render('index/index.html.twig', [
-            'form'     => $form->createView(),
+            'form' => $form->createView(),
             'filename' => $filename,
-            'dtos'     => $dtos,
+            'dtos' => $dtos,
         ]);
     }
 }

@@ -2,8 +2,6 @@
 
 namespace App\DTO;
 
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-
 class CellDTO
 {
     private array $cell;

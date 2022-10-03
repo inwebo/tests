@@ -17,6 +17,5 @@ class DtoManager
     public function persistOrUpdate(CellDTO $dto): void
     {
         // Persist or Update avec Doctrine c'est trivial
-        $this->em;
     }
 }
