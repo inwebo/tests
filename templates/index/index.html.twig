@@ -9,12 +9,22 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    {{ form_start(form) }}
+    <div class="my-custom-class-for-errors">
+        {{ form_errors(form) }}
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/juli1/www/tests/src/Controller/IndexController.php'|file_link(0) }}">src/Controller/IndexController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/juli1/www/tests/templates/index/index.html.twig'|file_link(0) }}">templates/index/index.html.twig</a></code></li>
-    </ul>
+    <div class="row">
+        <div class="col">
+            {{ form_row(form.excel) }}
+        </div>
+    </div>
+    {{ form_end(form) }}
+    {{ filename }}
+
+
+    {% for dto in data %}
+        <li>{{ dto.city }}</li>
+    {% endfor %}
 </div>
 {% endblock %}

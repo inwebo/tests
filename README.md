@@ -35,8 +35,6 @@ bin/console doctrine:schema:update --force
 
 ```bash
 symfony server:start
-
-# bin/console server:start
 ```
 
 ## Linter
