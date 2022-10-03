@@ -25,13 +25,9 @@ class ExcelParser
                 $cellIterator = $row->getCellIterator();
                 $cellIterator->setIterateOnlyExistingCells(false);
 
-                // foreach ($cellIterator as $cell) {
                 if ($rowIndex > 1) {
-                    $dto = new CellDTO(iterator_to_array($cellIterator));
-                    $data[] = $dto;
-                    // dd($dto->getAgency(), $dto->getVin(), $dto->getCity(), $dto->getRefMaker(), $dto->getRefModel());
+                    $data[] = new CellDTO(iterator_to_array($cellIterator));
                 }
-                // }
             }
         }
 
