@@ -46,4 +46,4 @@ composer php-cs-fixer
 ## Durée
 
 - Mise en place stack : ~30 mins
-- 
+- Logique : ~120 mins
