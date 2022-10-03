@@ -23,8 +23,28 @@
     {{ filename }}
 
 
-    {% for dto in data %}
-        <li>{{ dto.city }}</li>
-    {% endfor %}
+
+
+
+    {% if dtos is not empty %}
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>VIN</th>
+            <th>Agency</th>
+        </tr>
+        {% for dto in dtos %}
+            <tr>
+                <td>{{ dto.city }}</td>
+                <td>{{ dto.refMaker }}</td>
+                <td>{{ dto.refModel }}</td>
+                <td>{{ dto.vin }}</td>
+                <td>{{ dto.agency }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
 </div>
 {% endblock %}

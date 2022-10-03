@@ -20,7 +20,7 @@ class IndexController extends AbstractController
         $this->dtoManager = $dtoManager;
     }
 
-    public function index(Request $request, string $filename = '', string $data = ''): Response
+    public function index(Request $request, string $filename = '', array $dtos = []): Response
     {
         $form = $this->createForm(ImportType::class, null);
         $form->handleRequest($request);
@@ -38,7 +38,7 @@ class IndexController extends AbstractController
         return $this->render('index/index.html.twig', [
             'form'     => $form->createView(),
             'filename' => $filename,
-            'data'     => $dtos,
+            'dtos'     => $dtos,
         ]);
     }
 }
